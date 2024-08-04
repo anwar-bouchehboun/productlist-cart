@@ -1,0 +1,166 @@
+
+
+.order_confirmed_section {
+    position: fixed;
+
+    width: 100vw;
+    min-height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.confirm_panel {
+    width: 30rem;
+
+    background-color: hsl(20, 50%, 98%);
+
+    border-radius: 0.3rem;
+
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 800px) {
+    .confirm_panel {
+        width: 90%;
+    }
+}
+
+
+.confirm_panel > h3 {
+    font-size: 2rem;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.confirm_panel > p {
+    margin: 0.5rem 0 1rem 0;
+    color: hsl(12, 20%, 44%);
+}
+
+.cart_image {
+    width: 3rem;
+}
+
+
+
+.confirmed_preview {
+    padding: 0rem 1rem;
+    max-height: 20rem;
+
+    box-sizing: border-box;
+    border-radius: 0.3rem;
+
+    background-color: hsl(13, 31%, 94%);
+
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
+.cart_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem 0rem;
+    border-bottom: 1px solid hsl(14, 25%, 72%);
+}
+
+
+.cart_item > div {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart_item_info {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.3rem;
+}
+
+.cart_item_info > * {
+    margin: 0;
+}
+
+.cart_item_info > P {
+    color: hsl(14, 65%, 9%);
+    font-weight: 500;
+}
+
+.cart_item_price {
+    display: flex;
+    gap: 1rem;
+}
+
+.cart_item_price > * {
+    margin: 0;
+}
+
+/* item amount counter */
+.cart_item_price > p:nth-child(1) {
+    color: hsl(14, 86%, 42%);
+    font-weight: 500;
+}
+
+/* item price */
+.cart_item_price > p:nth-child(2) {
+    color: hsl(7, 20%, 60%);
+}
+
+
+/* total price of all */
+.total_items_price {
+    color: hsl(14, 65%, 9%);
+    font-weight: 500;
+}
+
+
+
+
+.total_price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.total_price > p:nth-child(1) {
+    font-size: 0.9rem;
+    color: hsl(14, 65%, 9%);
+}
+
+.total_price > p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+
+.new_order {
+    margin: 2rem 0rem 0rem 0rem;
+
+    height: 3rem;
+    width: 100%;
+
+    border-radius: 2rem;
+    border: none;
+
+    background-color: hsl(14, 86%, 42%);
+    color: hsl(13, 31%, 94%);
+
+    font-weight: 700;
+    font-size: 1rem;
+
+    cursor: pointer;
+}
